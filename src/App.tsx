@@ -1,24 +1,67 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+import Test from "./Test";
+import NewWord from "./NewWord";
+import Dictionary from './Dictionary';
+
 function App() {
+  const [showMenu, setShowMenu] = useState(true);
+  const [showTest, setShowTest] = useState(false);
+  const [showNewWord, setShowNewWord] = useState(false);
+  const [showDictionary, setShowDictionary] = useState(false);
+
+  const onShowTest = () => {
+    setShowMenu(false);
+    setShowDictionary(false);
+    setShowNewWord(false);
+    setShowTest(true);
+  }
+
+  const onShowDictionary = () => {
+    setShowMenu(false);
+    setShowTest(false);
+    setShowNewWord(false);
+    setShowDictionary(true);
+  }
+
+  const onShowMenu = () => {
+    setShowMenu(true);
+    setShowTest(false);
+    setShowNewWord(false);
+    setShowDictionary(false);
+  }
+
+  const onShowNewWord = () => {
+    setShowMenu(false);
+    setShowTest(false);
+    setShowDictionary(false);
+    setShowNewWord(true);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="body">
+        {showMenu &&
+					<div className='menu'>
+						<div className={'buttonHold'}>
+							<button
+								className={`btn`}
+								onClick={onShowTest}>Teszt
+							</button>
+						</div>
+						<div className={'buttonHold'}>
+							<button
+								className={`btn`}
+								onClick={onShowDictionary}>Szótár
+							</button>
+						</div>
+					</div>
+        }
+        {showDictionary && <Dictionary showMenu={onShowMenu} showNewWord={onShowNewWord} />}
+        {showTest && <Test showMenu={onShowMenu} />}
+        {showNewWord && <NewWord showDictionary={onShowDictionary} />}
+      </div>
     </div>
   );
 }
