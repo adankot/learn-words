@@ -1,7 +1,7 @@
 {
   "name": "Learn words",
   "short_name": "Learn words",
-  "start_url": "/learn-words",
+  "start_url": "/learn-words/",
   "icons": [
     {
       "src": "favicon.ico",
