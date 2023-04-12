@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a558283d.css",
-    "main.js": "/static/js/main.529a81bf.js",
-    "static/js/787.dd89788c.chunk.js": "/static/js/787.dd89788c.chunk.js",
-    "service-worker.js": "/service-worker.js",
-    "index.html": "/index.html",
-    "main.a558283d.css.map": "/static/css/main.a558283d.css.map",
-    "main.529a81bf.js.map": "/static/js/main.529a81bf.js.map",
-    "787.dd89788c.chunk.js.map": "/static/js/787.dd89788c.chunk.js.map"
+    "main.css": "/learn-words/static/css/main.a558283d.css",
+    "main.js": "/learn-words/static/js/main.e0e37378.js",
+    "static/js/787.dd89788c.chunk.js": "/learn-words/static/js/787.dd89788c.chunk.js",
+    "service-worker.js": "/learn-words/service-worker.js",
+    "index.html": "/learn-words/index.html",
+    "main.a558283d.css.map": "/learn-words/static/css/main.a558283d.css.map",
+    "main.e0e37378.js.map": "/learn-words/static/js/main.e0e37378.js.map",
+    "787.dd89788c.chunk.js.map": "/learn-words/static/js/787.dd89788c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a558283d.css",
-    "static/js/main.529a81bf.js"
+    "static/js/main.e0e37378.js"
   ]
 }

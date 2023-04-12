@@ -1,8 +1,7 @@
 {
-  "homepage": "https://adankot.github.io/learn-words",
   "name": "Learn words",
   "short_name": "Learn words",
-  "start_url": "/learn-words/",
+  "start_url": ".",
   "icons": [
     {
       "src": "favicon.ico",
