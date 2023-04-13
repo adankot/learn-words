@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 
 import './style.css';
 
 function Dictionary({ showMenu, showNewWord }: { showMenu: () => void, showNewWord: () => void }) {
-  const dictionary: Array<{ hungarian: string, foreign: string }> = JSON.parse(localStorage.getItem('dictionary') ?? '[]');
+  const dictionary: Array<{ hungarian: string, foreign: string }> = useMemo(() => JSON.parse(localStorage.getItem('dictionary') ?? '[]'), []);
   const [wordList, setWordList] = useState(dictionary);
 
   const removeWord = (index: number) => {
-    dictionary.splice(index, 1);
-    localStorage.setItem('dictionary', JSON.stringify(dictionary));
-    setWordList(dictionary);
+    const newDictionary = wordList.filter((item, i) => index !== i);
+    localStorage.setItem('dictionary', JSON.stringify(newDictionary));
+    setWordList(newDictionary);
   }
 
   return <div>
