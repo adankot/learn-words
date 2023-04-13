@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/learn-words/static/css/main.b33a5432.css",
-    "main.js": "/learn-words/static/js/main.14a8690c.js",
+    "main.js": "/learn-words/static/js/main.3410b1e8.js",
     "static/js/787.dd89788c.chunk.js": "/learn-words/static/js/787.dd89788c.chunk.js",
     "service-worker.js": "/learn-words/service-worker.js",
     "index.html": "/learn-words/index.html",
     "main.b33a5432.css.map": "/learn-words/static/css/main.b33a5432.css.map",
-    "main.14a8690c.js.map": "/learn-words/static/js/main.14a8690c.js.map",
+    "main.3410b1e8.js.map": "/learn-words/static/js/main.3410b1e8.js.map",
     "787.dd89788c.chunk.js.map": "/learn-words/static/js/787.dd89788c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b33a5432.css",
-    "static/js/main.14a8690c.js"
+    "static/js/main.3410b1e8.js"
   ]
 }
